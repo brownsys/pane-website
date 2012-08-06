@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Participatory Networking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Participatory Networking</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#about">Presentations</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Participatory Networking</h1>
+        <h2>An API for SDNs</h2>
+        <p>Participatory Networking involves end-users, hosts and applications in network management by supporting resource requests, traffic hints, and status queries.</p>
+        <p><a class="btn btn-primary btn-large" href="http://github.com/brownsys/pane" target="_blank">Download &raquo;</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span12">
+            <h2>About</h2>
+            <hr>
+            <p>PANE is a prototype <a href="http://www.openflow.org" target="_blank">OpenFlow</a> controller which implements Participatory Networking, an API for end-users, hosts and applications to take part in network management. PANE allows these principals to directly contact the network control-plane to place requests for resources, provide hints about future traffic, or query the state of the network. PANE divides and delegates authority for network management using a hierarchy of &ldquo;shares,&rdquo; which are also managed by interacting with the PANE server.</p>
+            <br />
+       </div>
+
+       <div class="span12">
+           <h2>Papers and Presentations</h2>
+           <hr>
+           <p>
+           	<li>Andrew D. Ferguson, Arjun Guha, Chen Liang, Rodrigo Fonseca, and Shriram Krishnamurthi. Hierarchical Policies for Software Defined Networks. To appear in <em>Proc. Workshop on Hot Topics in Software Defined Networks (Hot-SDN)</em>, August 2012. [<a href="http://www.cs.brown.edu/~adf/work/HotSDN2012-paper.pdf"><tt>Paper</tt></a>]</li><br />
+
+	        <li>Andrew D. Ferguson, Arjun Guha, Jordan Place, Rodrigo Fonseca, and Shriram Krishnamurthi. Participatory Networking. In <em>Proc. Workshop on Hot Topics in Management of Internet, Cloud, and Enterprise Networks and Services (Hot-ICE)</em>, April 2012. [<a href="http://www.cs.brown.edu/~adf/work/HotICE2012-paper.pdf"><tt>Paper</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/HotICE2012-talk.key"><tt>Talk (key)</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/HotICE2012-talk.pdf"><tt>Talk (pdf)</tt></a>] [<a href="https://www.usenix.org/conference/hot-ice12/participatory-networking"><tt>Talk (video)</tt></a>]</li><br />
+           </p>
+           <br />
+        </div>
+
+       <div class="span12">
+           <h2>Contact</h2>
+           <hr>
+           <p>Members of the Particpatory Networking project include
+           <a href="http://www.cs.brown.edu/~adf/" target="_blank">Andrew Ferguson</a>,
+           <a href="http://www.cs.brown.edu/~arjun/" target="_blank">Arjun Guha</a>,
+           Chen Liang,
+           <a href="http://www.cs.brown.edu/~betsy/" target="_blank">Betsy Hilliard</a>,
+           <a href="https://twitter.com/#!/tapman90" target="_blank">Jordan Place</a>,
+           <a href="http://www.cs.brown.edu/~rfonseca/" target="_blank">Rodrigo Fonseca</a>, and
+           <a href="http://www.cs.brown.edu/~sk/" target="_blank">Shriram Krishnamurthi</a>.
+           Please contact Andrew Ferguson (<a href="mailto:adf@cs.brown.edu">adf@cs.brown.edu</a>) with any questions or comments.</p>
+           
+           <p>The authors wish to thank
+           <a href="http://www.cs.brown.edu/~cjc/" target="_blank">Carleton Coffrin</a>,
+           <a href="http://www.cs.brown.edu/~joe/" target="_blank">Joe Politz</a>,
+           <a href="http://www.cs.princeton.edu/~jrex/" target="_blank">Jennifer Rexford</a>,
+           <a href="http://www.eecs.berkeley.edu/Faculty/Homepages/shenker.html" target="_blank">Scott Shenker</a>, and
+           Andreas Voellmy
+           for helpful discussions, feedback, and assistance with this project.
+           This work is partially supported by NSF grant 1012060.
+           Andrew Ferguson is supported by an NDSEG fellowship.
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Brown University 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/js/bootstrap-button.js"></script>
+    <script src="bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
