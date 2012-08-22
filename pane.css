@@ -1,0 +1,8 @@
+.diagram {
+    float: right;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    clear: right;
+}
