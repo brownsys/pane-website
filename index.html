@@ -32,6 +32,17 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
 
+    <script type="text/javascript">
+        function bibtexToggle(id) {
+            e = document.getElementById(id)
+            if (e.style.display != 'block') {
+                e.style.display = 'block';
+            } else {
+                e.style.display = 'none';
+            }
+        }
+    </script>
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -100,7 +111,16 @@
            <h2>Papers and Presentations</h2>
            <hr>
            <p>
-           <li>Andrew D. Ferguson, Arjun Guha, Chen Liang, Rodrigo Fonseca, and Shriram Krishnamurthi. Hierarchical Policies for Software Defined Networks. In <em>Proc. Workshop on Hot Topics in Software Defined Networks (Hot-SDN)</em>, August 2012. [<a href="http://www.cs.brown.edu/~adf/work/HotSDN2012-paper.pdf"><tt>Paper</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/HotSDN2012-talk.key"><tt>Talk (key)</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/HotSDN2012-talk.pdf"><tt>Talk (pdf)</tt></a>]</li><br />
+           <li>Andrew D. Ferguson, Arjun Guha, Chen Liang, Rodrigo Fonseca, and Shriram Krishnamurthi. Hierarchical Policies for Software Defined Networks. In <em>Proc. Workshop on Hot Topics in Software Defined Networks (Hot-SDN)</em>, August 2012. [<a href="http://www.cs.brown.edu/~adf/work/HotSDN2012-paper.pdf"><tt>Paper</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/HotSDN2012-talk.key"><tt>Talk (key)</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/HotSDN2012-talk.pdf"><tt>Talk (pdf)</tt></a>] [<span class="bibtex-btn" onClick="bibtexToggle('ferguson2012hft')">BibTeX</span>]
+           <div id="ferguson2012hft" class="bibtex">
+               @inproceedings{Ferguson:2012hft,<br />
+               Author = {Ferguson, Andrew and Guha, Arjun and Liang, Chen and Fonseca, Rodrigo and Krishnamurthi, Shriram},<br />
+               Title = {{Hierarchical Policies for Software Defined Networks}},<br />
+               Booktitle = {Proc. Hot-SDN '12},<br />
+               Year = {2012},<br />
+               Address = {Helsinki, Finland}}
+           </div>
+           </li><br />
 
            <li>Rodrigo Fonseca. Participatory Networking. Microsoft Research (Redmond); August 8, 2012.</li><br />
 
@@ -108,7 +128,16 @@
 
            <li>Rodrigo Fonseca. Participatory Networking. Boston University; May 10, 2012. [<a href="files/2012CloudTrustWorkshop.pdf"><tt>Talk (pdf)</tt></a>]</li><br />
 
-           <li>Andrew D. Ferguson, Arjun Guha, Jordan Place, Rodrigo Fonseca, and Shriram Krishnamurthi. Participatory Networking. In <em>Proc. Workshop on Hot Topics in Management of Internet, Cloud, and Enterprise Networks and Services (Hot-ICE)</em>, April 2012. [<a href="http://www.cs.brown.edu/~adf/work/HotICE2012-paper.pdf"><tt>Paper</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/HotICE2012-talk.key"><tt>Talk (key)</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/HotICE2012-talk.pdf"><tt>Talk (pdf)</tt></a>] [<a href="https://www.usenix.org/conference/hot-ice12/participatory-networking"><tt>Talk (video)</tt></a>]</li><br />
+           <li>Andrew D. Ferguson, Arjun Guha, Jordan Place, Rodrigo Fonseca, and Shriram Krishnamurthi. Participatory Networking. In <em>Proc. Workshop on Hot Topics in Management of Internet, Cloud, and Enterprise Networks and Services (Hot-ICE)</em>, April 2012. [<a href="http://www.cs.brown.edu/~adf/work/HotICE2012-paper.pdf"><tt>Paper</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/HotICE2012-talk.key"><tt>Talk (key)</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/HotICE2012-talk.pdf"><tt>Talk (pdf)</tt></a>] [<a href="https://www.usenix.org/conference/hot-ice12/participatory-networking"><tt>Talk (video)</tt></a>] [<span class="bibtex-btn" onClick="bibtexToggle('ferguson2012pane')">BibTeX</span>]
+           <div id="ferguson2012pane" class="bibtex">
+               @inproceedings{Ferguson:2012pane,<br />
+               Author = {Ferguson, Andrew and Guha, Arjun and Place, Jordan and Fonseca, Rodrigo and Krishnamurthi, Shriram},<br />
+               Title = {{Participatory Networking}},<br />
+               Booktitle = {Proc. Hot-ICE '12},<br />
+               Year = {2012},<br />
+               Address = {San Jose, CA}}
+           </div>
+           </li><br />
            </p>
            <br />
         </div>

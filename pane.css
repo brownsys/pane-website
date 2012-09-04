@@ -6,3 +6,26 @@
     border: 1px solid black;
     clear: right;
 }
+
+.bibtex {
+    display:none;
+    border: 1px solid #aaaaaa;
+    background: #f9ef7e;
+    width: 90%;
+    margin-left: 0.5em;
+    margin-right: auto;
+    font: 11px monospace;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.bibtex-btn {
+    font-family: monospace;
+    color: #08C;
+    cursor: pointer;
+}
+
+.bibtex-btn:hover {
+    text-decoration: underline;
+    color: #005580;
+}
