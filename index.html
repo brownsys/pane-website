@@ -73,6 +73,7 @@
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#example">Example</a></li>
               <li><a href="#papers">Presentations</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -105,6 +106,17 @@
             <br />
        </div>
 	</section>
+
+    <section id="example">
+        <div class="span12">
+            <h2>Example - Isolating Apache ZooKeeper traffic</h2>
+            <hr>
+            <img src="zookeeper-experiment.png" class="diagram">
+            <p>Apache <a href="http://zookeeper.apache.org">ZooKeeper</a> is a coordination service used at Twitter, Yahoo!, Netflix and elsewhere, where it fills a similar role to Google's Chubby service or Paxos quorums. During write operations, servers in the ZooKeeper ensemble must agree to commit each operation, a task which is sensitive to increased network latency. By augmenting ZooKeeper with <a href="https://github.com/brownsys/pane-zookeeper">support for PANE</a>, and granting it the necessary authority, our PANE-enabled ZooKeeper can request guaranteed bandwidth for its traffic, which, in turn, leads to lower latency as flows do not compete in switch queues with other traffic. In the plot on the right, the red line is a CDF of the latency of ZooKeeper CREATE operations when running on an unloaded network, the green line is the increased latency when the links used by ZooKeeper's traffic are heavily loaded, and the blue line represents the return to lower latency when exercises its authority to isolate its traffic using PANE.</p>
+            <p>We use PANE's <a href="https://github.com/brownsys/pane/tree/master/client-libs">client library for Java applications</a> to create and manage the necessary PANE requests. Implementing complete support for PANE in ZooKeeper, including introducing additional configuration parameters required only <a href="">a few hundred lines of code</a>. Further details of this experiment and its setup can be found in our Hot-SDN 2012 paper below, and we make our <a href="http://github.com/brownsys/zookeeper-benchmark">ZooKeeper benchmarking tool</a>  available for download.</p>
+            <br />
+        </div>
+    </section>
 
 	<section id="papers">
        <div class="span12">
