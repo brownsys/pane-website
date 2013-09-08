@@ -75,6 +75,7 @@
               <li><a href="#about">About</a></li>
               <li><a href="#example">Example</a></li>
               <li><a href="#papers">Presentations</a></li>
+              <li><a href="#vm">Demo VM</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -123,7 +124,7 @@
            <h2>Papers and Presentations</h2>
            <hr>
            <p>
-           <li>Andrew D. Ferguson, Arjun Guha, Chen Liang, Rodrigo Fonseca, and Shriram Krishnamurthi. Participatory Networking: An API for Application Control of SDNs. To appear in <em>ACM SIGCOMM 2013</em>, August 2013. [<a href="http://www.cs.brown.edu/~adf/work/SIGCOMM2013-paper.pdf"><tt>Paper</tt></a>] [<span class="bibtex-btn" onClick="bibtexToggle('ferguson2013sigcomm')">BibTeX</span>]
+           <li>Andrew D. Ferguson, Arjun Guha, Chen Liang, Rodrigo Fonseca, and Shriram Krishnamurthi. Participatory Networking: An API for Application Control of SDNs. In <em>Proc. ACM SIGCOMM 2013</em>, August 2013. [<a href="http://www.cs.brown.edu/~adf/work/SIGCOMM2013-paper.pdf"><tt>Paper</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/SIGCOMM2013-talk.key"><tt>Talk (key)</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/SIGCOMM2013-talk.pdf"><tt>Talk (pdf)</tt></a>] [<a href="http://www.cs.brown.edu/~adf/work/SIGCOMM2013-talk.ppt"><tt>Talk (ppt, converted)</tt></a>] [<span class="bibtex-btn" onClick="bibtexToggle('ferguson2013sigcomm')">BibTeX</span>]
            <div id="ferguson2013sigcomm" class="bibtex">
                @inproceedings{Ferguson:2013sigcomm,<br />
                Author = {Ferguson, Andrew and Guha, Arjun and Liang, Chen and Fonseca, Rodrigo and Krishnamurthi, Shriram},<br />
@@ -178,6 +179,19 @@
         </div>
 	</section>
 
+    <section id="vm">
+        <div class="span12">
+            <h2>Demo VM</h2>
+            <hr>
+            <img src="vm-screenshot.png" style="border: 0px; padding-top: 0px" class="diagram">
+            <p>To make exploring PANE and its potential use cases simpler, we are providing this demo virtual machine. The VM uses <a href="http://www.mininet.org">Mininet</a> to create a virtual network topology with PANE functioning as the SDN controller, and can use either <a href="http://www.openvswitch.org">Open vSwitch</a> or the OpenFlow 1.0 <a href="https://github.com/brownsys/openflow">reference switch</a> as the virtual switches. The VM also includes a PANE-enabled <a href="https://github.com/brownsys/pane-zookeeper">version of ZooKeeper</a>, the <a href="https://github.com/brownsys/zookeeper-benchmark">ZooKeeper benchmark</a>, and a <a href="https://github.com/brownsys/pane-demo-vm/blob/master/demos/ZooKeeperDemo.py">script which launches</a> the experiment described above. In addition, all of the tools needed to further develop PANE are also included.</p>
+            <p>The virtual machine is 64-bit <a href="http://www.xubuntu.org">Xubuntu</a> 12.10, and requires <a href="https://www.virtualbox.org/">Virtual Box</a> to run.</p>
+            <p>Download link: <a href="files/PANEdemoVM.tar.gz">PANEdemoVM.tar.gz</a> (1.4 GB)</p>
+            <p>SHA1 checksum for VM download: <tt>2481d078fdb3ecc2ffe6476d8e9d62e9498efb56</tt></p>
+            <p>Finally, all of the files to create this virtual machine are <a href="https://github.com/brownsys/pane-demo-vm/">avilable on Github</a>. If you would like to create your VM for SDN development, check out the <a href="https://github.com/brownsys/pane-demo-vm/blob/master/INSTALL">INSTALL file</a>.</p>
+            <br />
+        </div>
+    </section>
 
 	<section id="contact">
        <div class="span12">
@@ -211,7 +225,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Brown University 2012</p>
+        <p>&copy; Brown University 2012-2013</p>
       </footer>
 
     </div> <!-- /container -->
